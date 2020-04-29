@@ -1,0 +1,31 @@
+<button id="btn2">btn2 -> Tipos de popup       </button>      
+<button id="btn3">btn3 -> Con Imagen           </button>
+<button id="btn4">btn4 -> Con PosiciÃ³n         </button>      
+<button id="btn5">btn5 -> Animada              </button>
+<button id="btn6">btn6 -> Cambiando el fondo   </button>   
+<button id="btn8">btn8 -> Timer                </button>      
+
+
+<!-- LINK   -->
+<link rel="stylesheet" href="plugins/animate.css/animate.css">  
+<link rel="stylesheet" href="plugins/sweetAlert2/sweetalert2.min.css">  	
+
+
+ 
+<!-- JQUERY -->
+<script src="jquery/jquery-3.3.1.min.js"></script>	 	
+
+
+
+<!-- POPER -->
+<script src="popper/popper.min.js"></script>	 
+
+
+
+<!--    Plugin sweet Alert 2  -->
+<script src="plugins/sweetAlert2/sweetalert2.all.min.js"></script>
+
+
+
+<!-- FILE JS-->
+<script src="js/template_sweetAlert.js"></script> 	  
