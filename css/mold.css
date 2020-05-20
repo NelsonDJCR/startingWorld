@@ -1,15 +1,47 @@
-.regla{
+@font-face {
+    font-family: 'cinzel';
+    src: url("../font/CinzelDecorative-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'cinzel-bold';
+    src: url("../font/CinzelDecorative-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url("../font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url("../font/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'engagement';
+    src: url("../font/Engagement-Regular.ttf");
+}
+
+* {
+    font-family: 'montserrat';
+}
+
+.regla {
     background: white;
     height: 5px;
     width: 850px;
 }
-label {
+
+.label-max {
     color: white;
     font-size: 1.3em;
     margin-left: 12%;
-    font-family: helvetica;
+    /* background: red; */
+    width: 70%;
 }
-.input{
+
+.input-max {
     width: 80%;
     margin-left: 10%;
     border: none;
@@ -19,62 +51,104 @@ label {
     transition: all all .5s;
     background: rgba(255, 255, 255, 0.226);
     color: white;
-    font-family: helvetica;
     margin-bottom: 15px;
     float: center;
-    transition: 2s;
+    transition: 1s;
+    padding: 5px 5px 5px 10px;
 }
+.box_input-2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-1, .input-2{
+    width: 50%;
+    
+}
+.input-2 input{
+    margin-left: 2.5%;
+}
+
+
+.label-med {
+    color: white;
+    font-size: 1.3em;
+    margin-left: 5%;
+    /* background: red; */
+    width: 100%;
+}
+
+.input-med {
+    padding: 5px 5px 5px 10px;
+    width: 98%;
+    border: none;
+    border-bottom: 2px solid white;
+    border-left: 5px solid white;
+    font-size: 1.2em;
+    transition: all all .5s;
+    background: rgba(255, 255, 255, 0.226);
+    color: white;
+    margin-bottom: 15px;
+    float: center;
+    transition: 1s;
+}
+
 .input-text {
     height: 0;
     padding: 15px;
 }
+
 .input-select {
     height: 32px;
-    padding: 0px 0px 0px 15px ;
+    padding: 0px 0px 0px 15px;
 }
+
 .textarea {
     resize: none;
     padding: 15px;
     height: 100px;
 }
-.textarea-big{
+
+.textarea-big {
     height: 200px;
     resize: none;
     padding: 15px;
 }
+
 option {
     color: black;
 }
-.input::placeholder {
+
+.input-med::placeholder,.input-max::placeholder{
     transition: opacity 1s, letter-spacing 1s;
     color: rgba(255, 255, 255, 0.582);
-
-}
-.input:focus {
-  background: none;
-  transition: 2s;
-  outline: none;
 }
 
+.input-med:focus , .input-max:focus {
+    background: none;
+    transition: 1s;
+    outline: none;
+}
 
-
-
-.input:focus::placeholder {
+.input-med:focus::placeholder, .input-max:focus::placeholder {
     opacity: 0;
     letter-spacing: 35px;
 }
-.border{
+
+.border {
     border-radius: 25px;
 }
+
 .file-txt {
     text-align: center;
     color: white;
-    font-family: helvetica;
     cursor: pointer;
     font-size: 1.3em;
 }
 
 .file-box {
+    margin-bottom: 15px;
     cursor: pointer;
     position: relative;
     padding: 0.2px;
@@ -87,14 +161,15 @@ option {
     margin-left: 10%;
     transition: .1s;
 }
+
 .file-box:hover {
     background: rgba(255, 255, 255, 0.5);
     border: 3px dotted white;
     color: aqua;
     transition: .1s;
     width: 79%;
-
 }
+
 .input-file {
     position: absolute;
     top: 0px;
@@ -104,19 +179,39 @@ option {
     width: 100%;
     height: 100%;
     opacity: 0;
+    
     cursor: pointer;
 }
 
 .file-img {
     width: 80px;
     position: absolute;
-    padding: 10px;
+    padding: 2px;
     transition: all .5s;
 }
+
+.section-diagonal-contain-blue {
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+    height: 400px;
+}
+
+.box-login {
+    width: 30%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.521);
+}
+
+.section-bottom {
+    background: rgb(3, 37, 68);
+    height: 50px;
+}
+
+
 @media screen and (max-width: 940px) {
     .input {
         width: 100%;
-        margin-left:0%;
+        margin-left: 0%;
     }
     label {
         margin-left: 3%;
@@ -130,6 +225,5 @@ option {
     }
     .file-box:hover {
         width: 98%;
-
     }
 }

@@ -8,6 +8,12 @@ input:select
 textarea
 input:file
 
+Agregar nuevos espacio
+
+
+
+sadasbdjhvb
+
 
 
 
