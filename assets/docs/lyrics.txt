@@ -1,0 +1,10 @@
+montserrat
+montserrat-bold
+    Estilo clasico/Normal
+
+cinzel
+cinzel-bold
+    Estilo elegante
+
+endgagement
+    Letra cursiva minúscula y bold/negrita
