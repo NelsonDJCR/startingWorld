@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alertify</title>
+        <link rel="stylesheet" href="../assets/plugins/alertify/alertify.css">
+        <script src="../assets/plugins/alertify/alertify.min.js"></script>
+        <link rel="stylesheet" href="../assets/plugins/font/font.css">
+    </head>
+    <body>
+        <h1>Con alertas</h1>
+        <button onclick="Normal()">Normal</button>
+        <button onclick="Comfirmar()">Comfirmar</button>
+        <h1>Con alertas</h1>
+        <button onclick="a()">alertify.success('Success message');</button>
+        <button onclick="b()">alertify.error('Error message');</button>
+        <button onclick="c()">alertify.warning('Warning message');</button>
+        <button onclick="d()">alertify.message('Normal message');</button>
+
+    </body>
+    <style>
+        body{
+            width: 80%;
+            margin: auto;
+            font-family: 'Cinzel';
+        }
+    </style>
+    <script>
+        function Normal(){
+            alertify
+                .alert("This is an alert dialog.", function(){
+                alertify.message('OK');
+            });
+        }
+        function Comfirmar(){
+            alertify.confirm("This is a confirm dialog.",
+                             function(){
+                alertify.success('Ok');
+            },
+                             function(){
+                alertify.error('Cancel');
+            });
+        }
+        //  Mesagge
+        function a(){
+            alertify.success('Success message');
+        }
+        function b(){
+            alertify.error('Error message');
+        }
+        function c(){
+            alertify.warning('Warning message');
+        }
+        function d(){
+            alertify.message('Normal message');
+        }
+
+
+
+    </script>
+</html>

@@ -1,0 +1,35 @@
+<!-- 
+// Guardar imagenes
+<?php $img = addslashes(file_get_contents($_FILES['NameImage']['tmp_name']));                        ?>
+// Mostrar imágenes
+<img src="data:image/jpg;base64,<?php echo base64_encode($row['nameImgInDataBase']); ?>">
+// Envio de datos
+<?php if (isset($_POST['nameBTN'])) {
+    include 'route.php';
+    } 
+?>
+
+
+// Mostrar datos 
+<?php
+
+while ($row = mysqli_fetch_array($run)) {
+    $ = $row[''];
+} ?>
+
+
+// Guardar datos <?php 
+$query = "INSERT INTO users (mail, phone) VALUES ('$mail','$phone')";
+$run = mysqli_query($conexion, $query);
+
+
+
+
+swal.fire({
+    icon: "success",
+    title: "Ready",
+    text: "Your data is save",
+    }).then(function () {
+    window.location = "index.php";
+});
+   
